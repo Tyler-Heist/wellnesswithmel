@@ -1,0 +1,262 @@
+/* -------------------- START GLOBAL STYLING -------------------- */
+
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(155deg, #FFFF00, #F3892C, #D67229);
+}
+
+nav {
+	background-color: #E4E4E4;
+	height: 80px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.3);
+	margin-bottom: 50px;
+}
+
+nav a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	width: 100px;
+	height: 10px;
+	padding: 10px 20px;
+	margin: 15px;
+	background-color: #4A4A4A;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+nav a:hover {
+	background-color: #F3892C;
+}
+
+
+.footer {
+	display: flex;
+	justify-content: center;   /* centers horizontally */
+	align-items: center;       /* centers vertically */
+	background-color: #E4E4E4;
+	height: 80px;              /* give footer a fixed height for vertical centering */
+}
+
+.footer a {
+	margin-right: 20px;
+	font-size: 28px; /* make icons a bit bigger */
+	color: #4A4A4A;  /* default color */
+	transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  	color: #F3892C; /* hover color */
+}
+
+.buttonLink {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 130px; /* slightly wider */
+	height: 45px;
+	border: none;
+	border-radius: 8px;
+	background-color: #4A4A4A;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.buttonLink:hover {
+	background-color: #F3892C; /* darker red on hover */
+}
+/* -------------------- END GLOBAL STYLING -------------------- */
+
+
+
+/* -------------------- START INDEX.HTML -------------------- */
+/* Base container */
+.split-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 75vw;
+	min-height: 60vh;
+	max-height: 100vh;   /* cap the height */
+	margin: 2rem auto;
+	gap: 2rem;
+	padding: 1rem;
+	border: 1px solid #CCCCCC;
+	box-sizing: border-box;
+	background-color: #F9F9F9;
+	box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.15);
+	overflow: auto;
+}
+
+.text-side {
+	flex: 1;
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+/* Text alignment depending on layout */
+.image-left .image-right .text-side {
+  	text-align: left;
+}
+
+.image-side {
+  	flex: 1;
+  	display: flex;
+	align-items: center;
+}
+
+/* 👇 align image differently depending on side */
+.image-left .image-side {
+	  justify-content: flex-start;  /* hug left */
+}
+
+.image-right .image-side {
+  	justify-content: flex-end;    /* hug right */
+}
+
+.image-side img {
+  	height: 100%;
+	width: auto;
+  	max-width: 100%;
+  	object-fit: cover;
+}
+
+.testimonial-header {
+	background-color: #F9F9F9;
+	color: #461d00;
+	text-align: center;
+	padding: .5rem;
+	border: solid #D67229;
+	border-width: 0px 2px 1px 2px;
+}
+
+.testimonials {
+	display: flex;
+	justify-content: center;
+}
+
+.testimonial {
+	flex: 1;
+	max-width: 33.3%;
+	box-sizing: border-box;
+	background-color: #F9F9F9;
+	padding: 5rem 8rem;
+	margin-bottom: 2rem;
+	border: 1px solid #D67229;
+	color: #461d00;
+}
+
+.testimonial h1 {
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.testimonial p {
+	font-size: 20px;
+	line-height: 1.8;
+}
+
+#shop-here {
+	text-align: center;
+	margin: 0rem auto 1rem auto;
+	max-width: 90vw;
+	background-color: #F9F9F9;
+}
+
+#shop-here h1 {
+	padding-top: 1rem;
+	color: #461d00;
+}
+
+.shop-here {
+	display: flex;
+	justify-content: center;  /* centers the .products container */
+	margin-top: 0rem;
+	margin-bottom: 3rem;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;  /* centers the product cards */
+	max-width: 80%;           /* keeps them from stretching edge to edge */
+	margin: 0 auto;           /* ensures container is centered */
+}
+
+.product {
+	flex: 1 1 20%;
+	max-width: 20%;
+	background-color: #F9F9F9;
+	margin-bottom: 2rem;
+	color: #461d00;
+	text-align: center;
+	padding: 1rem;
+	font-weight: 600;
+	box-sizing: border-box;
+	border: 1px solid #4A4A4A;
+}
+
+.product img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+.product a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 160px; /* slightly wider */
+	height: 40px;
+	border: none;
+	border-radius: 100px;
+	background-color: #4A4A4A;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: 400;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.product a:hover {
+	background-color: #F3892C; /* darker red on hover */
+}
+/* -------------------- END INDEX.HTML -------------------- */
+
+
+
+/* -------------------- START NUEVABODY.HTML -------------------- */
+.content {
+	justify-content: center;
+	width: 50vw;
+	min-height: 60vh;
+	max-height: 100vh;   /* cap the height */
+	margin: 2rem auto;
+	padding: 1rem;
+	border: 1px solid #CCCCCC;
+	box-sizing: border-box;
+	background-color: #F9F9F9;
+	box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.15);
+}
+
+.content .buttonLink {
+	width: 200px;
+}
+/* -------------------- START NUEVABODY.HTML -------------------- */
