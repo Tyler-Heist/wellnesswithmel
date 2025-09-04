@@ -241,7 +241,8 @@ nav a:hover {
 }
 
 .product a:hover {
-	background-color: #71C79C; /* darker red on hover */
+	background-color: #82D8AD;
+	color: #000000;
 }
 /* -------------------- END INDEX.HTML -------------------- */
 
