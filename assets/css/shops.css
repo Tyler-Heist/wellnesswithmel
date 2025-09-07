@@ -87,11 +87,26 @@ nav a:hover {
 /* -------------------- START NUEVA PRODUCTS STYLING -------------------- */
 .header {
   position: relative;
-  background: url("../images/nuevabody_header.png") center / contain no-repeat;
   display: flex;
   justify-content: center;
   padding: 4% 2% 2% 2%;
   box-sizing: border-box;
+}
+
+.header.nuevabody {
+  background: url("../images/nuevabody_header.png") center / contain no-repeat;
+}
+
+.header.nuevanitro {
+    background: url("../images/nuevanitro_header.png") center / contain no-repeat;
+}
+
+.header.nuevasnowcollagen {
+    background: url("../images/nuevasnowcollagen_header.png") center / contain no-repeat;
+}
+
+.header.nuevabeauty {
+  background: url("../images/nuevasnowcollagen_header.png") center / contain no-repeat;
 }
 
 .header .content {
@@ -185,4 +200,49 @@ nav a:hover {
 .content .buttonLink {
 	width: 200px;
 }
+
+.ordering {
+  background-color: rgba(249, 249, 249, 0.85);
+  border: 1px solid #93E9BE;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 0 auto 2rem auto;
+  max-width: 800px;
+  width: 90%;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+
+.ordering h2 {
+  color: #1a7f5a;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.ordering ol {
+  margin: 0;
+  padding-left: 1.5rem;
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #2a2a2a;
+}
+
+.ordering li {
+  margin-bottom: 0.75rem;
+}
+
+.ordering a {
+  color: #1a7f5a;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.ordering a:hover {
+  color: #0f4d37;
+  text-decoration: underline;
+}
+
 /* -------------------- END NUEVA PRODUCTS STYLING -------------------- */
