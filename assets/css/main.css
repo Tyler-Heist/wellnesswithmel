@@ -46,28 +46,28 @@ nav a:hover {
 
 .footer {
 	display: flex;
-	justify-content: center;   /* centers horizontally */
-	align-items: center;       /* centers vertically */
+	justify-content: center;
+	align-items: center;
 	background-color: #E4E4E4;
-	height: 80px;              /* give footer a fixed height for vertical centering */
+	height: 80px;
 }
 
 .footer a {
 	margin-right: 20px;
-	font-size: 28px; /* make icons a bit bigger */
-	color: #4A4A4A;  /* default color */
+	font-size: 28px;
+	color: #4A4A4A;
 	transition: color 0.3s ease;
 }
 
 .footer a:hover {
-  	color: #63c795; /* hover color */
+  	color: #63c795;
 }
 
 .buttonLink {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 130px; /* slightly wider */
+	width: 130px;
 	height: 45px;
 	border: none;
 	border-radius: 8px;
@@ -80,7 +80,7 @@ nav a:hover {
 }
 
 .buttonLink:hover {
-	background-color: #63c795; /* darker red on hover */
+	background-color: #63c795;
 }
 /* -------------------- END GLOBAL STYLING -------------------- */
 
@@ -95,7 +95,7 @@ nav a:hover {
 	flex-wrap: wrap;
 	width: 75vw;
 	min-height: 60vh;
-	max-height: 100vh;   /* cap the height */
+	max-height: 100vh;
 	margin: 2rem auto;
 	gap: 2rem;
 	padding: 1rem;
@@ -123,7 +123,7 @@ nav a:hover {
 	align-items: center;
 }
 
-/* 👇 align image differently depending on side */
+/* Align image differently depending on side */
 .image-left .image-side {
 	  justify-content: flex-start;  /* hug left */
 }
@@ -164,7 +164,7 @@ nav a:hover {
   background-color: #F9F9F9;
   padding: 2rem;
   margin-bottom: 2rem;
-  background-clip: padding-box;    /* makes background stop at the padding, so border area is transparent */
+  background-clip: padding-box;
   box-sizing: border-box;
 }
 
@@ -192,7 +192,7 @@ nav a:hover {
 
 .shop-here {
 	display: flex;
-	justify-content: center;  /* centers the .products container */
+	justify-content: center;
 	margin-top: 0rem;
 	margin-bottom: 3rem;
 }
@@ -201,9 +201,9 @@ nav a:hover {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;
-	justify-content: center;  /* centers the product cards */
-	max-width: 80%;           /* keeps them from stretching edge to edge */
-	margin: 0 auto;           /* ensures container is centered */
+	justify-content: center;
+	max-width: 80%;
+	margin: 0 auto;
 }
 
 .product {
@@ -228,7 +228,7 @@ nav a:hover {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 160px; /* slightly wider */
+	width: 160px;
 	height: 40px;
 	border: none;
 	border-radius: 100px;
@@ -245,24 +245,3 @@ nav a:hover {
 	color: #000000;
 }
 /* -------------------- END INDEX.HTML -------------------- */
-
-
-
-/* -------------------- START NUEVABODY.HTML -------------------- */
-.content {
-	justify-content: center;
-	width: 50vw;
-	min-height: 60vh;
-	max-height: 100vh;   /* cap the height */
-	margin: 2rem auto;
-	padding: 1rem;
-	border: 1px solid #CCCCCC;
-	box-sizing: border-box;
-	background-color: #F9F9F9;
-	box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.15);
-}
-
-.content .buttonLink {
-	width: 200px;
-}
-/* -------------------- START NUEVABODY.HTML -------------------- */
