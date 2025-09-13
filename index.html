@@ -7,34 +7,35 @@
 		<link rel="stylesheet" href="./assets/css/main.css" />
 		<script src="https://kit.fontawesome.com/00bdc7b97f.js" crossorigin="anonymous"></script>
 	</head>
-	<nav class='nav'>
-		<!-- BEGIN HEADER ICON
-		<div class='headerIcon'>
-			<a href="/" class='homeImg' target='_top'><img src="./assets/images/placeholder-1024x1024.png" alt='Header Icon'></img></a> 
+
+	<nav class="nav">
+		<a href="/" target="_top">Home</a>
+		<a href="/#about" target="_top">About</a>
+		<a href="/#protein-guide" target="_top">Protein Guide</a>
+		<a href="/#glycemic-guide" target="_top">LGL Guide</a>
+		<a href="/#rapid-reset" target="_top">Rapid Reset</a>
+		<a href="/#nuevabody" target="_top">NuevaBody</a>
+		<a href="https://bodynbeauty.com/melwalters" target="_blank" rel="noopener noreferrer">Shop</a>
+
+		<!-- Hamburger for mobile -->
+		<div class="hamburger" id="hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
 		</div>
-		END HEADER ICON -->
-			<a href="/" target='_top'>Home</a>
-			<a href="/#about" target='_top'>About</a>
-			<a href="/#protein-guide" target='_top'>Protein Guide</a>
-			<a href="/#glycemic-guide" target='_top'>LGL Guide</a>
-			<a href="/#rapid-reset" target='_top'>Rapid Reset</a>
-			<a href="/#nuevabody" target='_top'>NuevaBody</a>
+
+		<!-- Mobile dropdown container -->
+		<div class="nav-dropdown" id="navDropdown">
+			<a href="/" target="_top">Home</a>
+			<a href="/#about" target="_top">About</a>
+			<a href="/#protein-guide" target="_top">Protein Guide</a>
+			<a href="/#glycemic-guide" target="_top">LGL Guide</a>
+			<a href="/#rapid-reset" target="_top">Rapid Reset</a>
+			<a href="/#nuevabody" target="_top">NuevaBody</a>
 			<a href="https://bodynbeauty.com/melwalters" target="_blank" rel="noopener noreferrer">Shop</a>
-		<!-- HAMBURGER MENU -->
-		<!--
-			<div className='hamburgerMenu' onClick={ toggleHamburger }>
-				<HamburgerButton />
-				{hamburgerOpen && (
-					<div className='verticalMenu'>
-					<Link to='/' target='_top'>HOME</Link>
-					<Link to='/graphic-design' target='_top' >GRAPHIC DESIGN</Link>
-					<Link to='/photography' target='_top'>PHOTOGRAPHY</Link>
-					<Link to='/videography' target='_top'>VIDEOGRAPHY</Link>
-					<Link to='/about' target='_top'>ABOUT</Link>
-					<Link to='/contact' target='_top'>CONTACT</Link>
-			</div>
-		-->
+		</div>
 	</nav>
+
 	<body>
 		<div class="bodyContent">
 
@@ -142,69 +143,73 @@
 			</section>
 
 
+			<!-- Wrap the header and testimonials in a container -->
 			<section id="testimonials">
-				<div class="testimonial-header">
+				<div class="testimonials-container">
+					<div class="testimonial-header">
 					<h1>Testimonials</h1>
-				</div>
-				<div class="testimonials">
+					</div>
+					<div class="testimonials">
 					<div class="testimonial">
-					<h1>Kelley Painter</h1>
-					<p>
+						<h1>Kelley Painter</h1>
+						<p>
 						"Hi, I’m Kelley—a 59-year-old grandma of four from Moore, Oklahoma. 
 						Life hasn’t always been easy—I’ve faced challenges like weight struggles, diabetes, thyroid and kidney disease, and joint issues. 
 						But I refused to let those obstacles define me.<br>
 						With determination and the right guidance, I turned my life around. 
 						Inspired by following Melanie, I found the tools and support I needed to continue this journey, and now I’m passionate about helping others discover their strength, too."
-					</p>
+						</p>
 					</div>
 
 					<div class="testimonial">
-					<h1>Janet Ellsworth</h1>
-					<p>
+						<h1>Janet Ellsworth</h1>
+						<p>
 						"Hi, I am Janet Ellsworth and Melanie Walters found me online after I lost my job of 14 years because of an accident. 
-						I had many health issues and was feeling hopeless."
-						She introduced me to the products and not only do I love them and take them and they have changed my life and I lost 46 pounds in seven months and kept it off." 
-					</p>
+						I had many health issues and was feeling hopeless. She introduced me to the products and not only do I love them and take them and they have changed my life and I lost 46 pounds in seven months and kept it off." 
+						</p>
 					</div>
 
 					<div class="testimonial">
-					<h1>Emily Johnson</h1>
-					<p>
+						<h1>Emily Johnson</h1>
+						<p>
 						"I highly recommend WellnessWithMel to anyone looking to take control of their health and well-being.
 						The personalized approach and genuine care for their clients make all the difference in achieving sustainable lifestyle changes."
-					</p>
+						</p>
+					</div>
 					</div>
 				</div>
 			</section>
-
 
 			<section id="shop-here">
-				<h1>Shop Here</h1>
-				<div class="shop-here">
+				<div class="shop-container">
+					<h1>Shop Here</h1>
+					<div class="shop-here">
 					<div class="products">
 						<div class="product">
-							<img src="./assets/images/Amino_Acids.png">
-							<p>AMINO ACIDS</p>
-							<a href="./nuevabody.html" target="_blank" rel="noopener noreferrer">LEARN MORE</a>
+						<img src="./assets/images/Amino_Acids.png" alt="Amino Acids">
+						<p>AMINO ACIDS</p>
+						<a href="./nuevabody.html" target="_blank" rel="noopener noreferrer">LEARN MORE</a>
 						</div>
 						<div class="product">
-							<img src="./assets/images/Hydrogen_Water.png">
-							<p>HYDROGEN WATER</p>
-							<a href="./nuevanitro.html" target="_blank" rel="noopener noreferrer">LEARN MORE</a>
+						<img src="./assets/images/Hydrogen_Water.png" alt="Hydrogen Water">
+						<p>HYDROGEN WATER</p>
+						<a href="./nuevanitro.html" target="_blank" rel="noopener noreferrer">LEARN MORE</a>
 						</div>
 						<div class="product">
-							<img src="./assets/images/Collagen.png">
-							<p>COLLAGEN</p>
-							<a href="./nuevasnowcollagen.html" target="_blank" rel="noopener noreferrer">LEARN MORE</a>
+						<img src="./assets/images/Collagen.png" alt="Collagen">
+						<p>COLLAGEN</p>
+						<a href="./nuevasnowcollagen.html" target="_blank" rel="noopener noreferrer">LEARN MORE</a>
 						</div>
 						<div class="product">
-							<img src="./assets/images/Beauty.png">
-							<p>BEAUTY</p>
-							<a href="./nuevabeauty.html" target="_blank" rel="noopener noreferrer">LEARN MORE</a>
+						<img src="./assets/images/Beauty.png" alt="Beauty">
+						<p>BEAUTY</p>
+						<a href="./nuevabeauty.html" target="_blank" rel="noopener noreferrer">LEARN MORE</a>
 						</div>
+					</div>
 					</div>
 				</div>
 			</section>
+		</div>
 
 		<!-- Footer -->
 		<section class="footer" id="footer">
@@ -221,12 +226,20 @@
 		</section>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			const hamburger = document.getElementById('hamburger');
+			const navDropdown = document.getElementById('navDropdown');
+
+			hamburger.addEventListener('click', () => {
+				navDropdown.classList.toggle('active');
+			});
+		</script>
 
 	</body>
 </html>
