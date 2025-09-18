@@ -44,6 +44,7 @@ nav a:hover {
 	color: #000000;
 }
 
+/* Hide mobile dropdown by default */
 .nav-dropdown {
   display: none;
 }
@@ -173,7 +174,7 @@ nav a:hover {
 
 .testimonial {
   flex: 1 1 30%; /* three per row on large screens */
-  min-width: 250px; /* prevents too small on smaller screens */
+  min-width: 375px; /* prevents too small on smaller screens */
   background-color: #F9F9F9;
   padding: 2rem;
   box-sizing: border-box;
@@ -215,20 +216,24 @@ nav a:hover {
 	flex-wrap: wrap;
 	gap: 1rem;
 	justify-content: center;
-	max-width: 80%;
-	margin: 0 auto;
+  margin: 0 auto;
+	max-width: 90vw;
+  box-sizing: border-box;
 }
 
 .product {
-	flex: 1 1 20%;
-	max-width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+	flex: 1 1 calc(24% - 1rem);
+	max-width: calc(24% - 1rem);
 	background-color: #F9F9F9;
-	margin-bottom: 2rem;
 	text-align: center;
-	padding: 1rem;
-	font-weight: 600;
-	box-sizing: border-box;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
 	border: 1px solid #4A4A4A;
+	font-weight: 600;
 }
 
 .product img {
@@ -240,13 +245,17 @@ nav a:hover {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 160px;
+	width: 70%;
+  max-width: 140px;
+  padding: 0 1rem;
 	height: 40px;
+  margin: 0 auto;
 	border: none;
 	border-radius: 100px;
 	background-color: #4A4A4A;
 	color: #FFFFFF;
 	text-decoration: none;
+  font-size: clamp(0.5rem, 1.2vw, 1rem);
 	font-weight: 400;
 	cursor: pointer;
 	transition: background-color 0.2s ease;
@@ -258,6 +267,16 @@ nav a:hover {
 }
 
 /* -------------------- END INDEX.HTML -------------------- */
+
+/* -------------------- LAPTOP MEDIA QUERY -------------------- */
+
+@media (max-width: 1500px) {
+  .products {
+    max-width: 100%;
+  }
+}
+
+/* -------------------- END LAPTOP MEDIA QUERY -------------------- */
 
 /* -------------------- TABLET MEDIA QUERY -------------------- */
 

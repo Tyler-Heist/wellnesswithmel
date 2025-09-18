@@ -18,9 +18,11 @@ nav {
 	align-items: center;
 	justify-content: center;
 	box-shadow: 5px 5px 22px rgba(0, 0, 0, 0.3);
+  margin-bottom: 50px;
 }
 
 nav a {
+  font-size: clamp(0.5rem, 1.2vw, 1rem);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -29,6 +31,7 @@ nav a {
 	height: 10px;
 	padding: 10px 20px;
 	margin: 15px;
+  white-space: nowrap;
 	background-color: #4A4A4A;
 	color: #FFFFFF;
 	text-decoration: none;
@@ -84,6 +87,7 @@ nav a:hover {
 .buttonLink:hover {
 	background-color: #63c795;
 }
+
 /* -------------------- END GLOBAL STYLING -------------------- */
 
 
@@ -217,6 +221,7 @@ nav a:hover {
   width: 90%;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
   box-sizing: border-box;
+  padding: 0 2rem
 }
 
 
@@ -412,3 +417,80 @@ nav a:hover {
 }
 
 /* -------------------- END TABLET MEDIA QUERY -------------------- */
+
+/* -------------------- MOBILE MEDIA QUERY -------------------- */
+@media (max-width: 480px) {
+
+  nav {
+    height: 50px;
+  }
+
+  .nav-dropdown {
+      top: 50px;
+  }
+
+  .header .content {
+    padding: 1rem;
+    width: 95%;
+    box-sizing: border-box;
+  }
+
+  .header h1 { font-size: 1.4rem; }
+  .header h2 { font-size: 1.1rem; margin-top: 1.5rem; }
+  .header h3 { font-size: 1rem; }
+  .header h4 { font-size: 0.95rem; }
+
+  .highlight {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .comparison {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .comparison > div {
+    width: 100%;
+    min-width: 0;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    box-sizing: border-box;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .button-container .buttonLink {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .ordering {
+    width: 85%;
+    padding: 1rem;
+    margin: 0 auto 2rem auto;
+  }
+
+  .ordering h2 { font-size: 1rem; }
+  .ordering ol { font-size: 0.9rem; line-height: 1.5; }
+
+  .footer {
+	  height: 25px;
+  }
+}
+
+/* -------------------- END MOBILE MEDIA QUERY -------------------- */
