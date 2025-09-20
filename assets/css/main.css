@@ -54,7 +54,7 @@ nav a:hover {
 	justify-content: center;
 	align-items: center;
 	background-color: #E4E4E4;
-	height: 80px;
+  padding: clamp(0rem, 0.5vh, 0.8rem);
 }
 
 .footer a {
@@ -179,7 +179,7 @@ nav a:hover {
   padding: 2rem;
   box-sizing: border-box;
   border: 1px solid #CCCCCC;
-  box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 12px rgba(50,50,50,0.1);
 }
 
 .testimonial h1 {
@@ -188,7 +188,7 @@ nav a:hover {
 }
 
 .testimonial p {
-  font-size: 18px;
+  font-size: 1em;
   line-height: 1.6;
 }
 
@@ -198,6 +198,7 @@ nav a:hover {
 	max-width: 75vw;
 	background-color: #F9F9F9;
 	border: 1px solid #CCCCCC;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
 }
 
 #shop-here h1 {
@@ -255,7 +256,7 @@ nav a:hover {
 	background-color: #4A4A4A;
 	color: #FFFFFF;
 	text-decoration: none;
-  font-size: clamp(0.5rem, 1.2vw, 1rem);
+  font-size: clamp(0.4rem, 1.2vw, 1rem);
 	font-weight: 400;
 	cursor: pointer;
 	transition: background-color 0.2s ease;
@@ -327,6 +328,7 @@ nav a:hover {
 	background-color: #4A4A4A;
 	text-decoration: none;
 	font-weight: bold;
+  font-size: 1em;
 	border-radius: 5px;
 	margin: 0.5rem auto;
 	width: 70%;
@@ -419,20 +421,20 @@ nav a:hover {
   }
 
   .products {
-	row-gap: 0.5rem;
-	column-gap: 2rem;
+    column-gap: clamp(0.75rem, 3vw, 2rem);
+    row-gap: clamp(0.1rem, 3vw, 2rem);
   }
 
   .product {
     flex: 1 1 45%;
     max-width: 45%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
   }
 
   .product a {
-    width: 140px;
+    width: clamp(65px, 1vw, 140px);
     height: 35px;
-    font-size: 0.9rem;
+    font-size: clamp(0.5rem, 1vw, 0.9rem);
   }
 
   /* Reduce bodyContent padding/margin */
@@ -441,8 +443,6 @@ nav a:hover {
   }
 
   .footer {
-    height: auto;
-    padding: 1rem;
     gap: 0.5rem;
   }
 
@@ -453,3 +453,34 @@ nav a:hover {
 }
 
 /* -------------------- END TABLET MEDIA QUERY -------------------- */
+
+/* -------------------- MOBILE MEDIA QUERY -------------------- */
+
+@media (max-width: 600px) {
+  .split-container {
+    max-height: 100%;
+  }
+
+  .text-side p {
+    padding: 0 2rem;
+  }
+
+  .testimonial {
+    min-width: 90vw;
+  }
+
+  .testimonial p {
+    padding: 1rem 2rem;
+  }
+
+  .shop-container h1 {
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+
+  .shop-here {
+    margin-bottom: 1rem;
+  }
+}
+
+/* -------------------- END MOBILE MEDIA QUERY -------------------- */
