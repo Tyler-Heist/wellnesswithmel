@@ -365,12 +365,13 @@ nav a:hover {
   }
 
   .split-container {
-      flex-direction: column;  /* stack image and text vertically */
-      width: 90vw;
-      gap: 1rem;
-      padding: 1rem;
-      align-items: center;
-      text-align: center;
+    max-height: 100%;
+    flex-direction: column;  /* stack image and text vertically */
+    width: 90vw;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
   }
 
   .split-container .image-side,
